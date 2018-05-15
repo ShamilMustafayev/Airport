@@ -10,14 +10,13 @@ import javax.persistence.Id;
 
 @Entity
 @Data
-public class Airport{
+public class Flight{
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
-    private String name="XYZ airlines";
-    private double fuel;
+    private String departure;
+    private String destination;
 
 }
-
 
