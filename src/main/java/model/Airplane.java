@@ -1,6 +1,5 @@
 package model;
 
-
 import lombok.Data;
 
 import javax.persistence.Entity;
@@ -10,12 +9,12 @@ import javax.persistence.Id;
 
 @Entity
 @Data
-public class Airport{
-
+public class Airplane {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
-    private int name;
+    private String name;
+    private double fuel;
+    private String departureAirport;
+    private String destinationAirport;
 }
-
-
