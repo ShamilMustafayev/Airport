@@ -17,9 +17,11 @@ function postData() {
     };
     console.log(newFlight);
 
+
     // Convert JS object to JSON.
     var validJsonFlight = JSON.stringify(newFlight);
     console.log(validJsonFlight);
+
 
     // Post JSON to endpoint.
     $.ajax({
@@ -48,6 +50,7 @@ function getData() {
             $('#flights').DataTable().clear();
             $('#flights').DataTable().rows.add(flights);
             $('#flights').DataTable().columns.adjust().draw();
+            window.sessionStorage.setItem("flightData", JSON.stringify(flights));
         }
     });
 }
@@ -80,4 +83,6 @@ function setup() {
 
     // Load first data.
     getData();
+
+
 }
