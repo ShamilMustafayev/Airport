@@ -24,13 +24,17 @@ function mainFunction(){
 function fly(i){
 var dataFlight = JSON.parse(window.sessionStorage.getItem("flightData"));
 //var temporary = Number(dataFood[i].quantity);
-if (dataFlight[i].fuel>2)
+if (dataFlight[i].fuel>=2)
 {
 alert("Your flight has just been processed!");
 dataFlight[i].fuel=dataFlight[i].fuel-2;
 window.sessionStorage.setItem("flightData", JSON.stringify(dataFlight));
 $('#table tbody').empty();
 mainFunction();
+}
+else
+{
+alert("Unfortunately your airplane does not have enough fuel to fly. Please refill!");
 }
 }
 // function mainFunction (){

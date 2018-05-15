@@ -19,5 +19,6 @@ public class Flight{
     private double fuel;
     private String departureAirport;
     private String destinationAirport;
+    private double refillAmount;
 }
 
