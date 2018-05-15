@@ -11,7 +11,7 @@ import javax.persistence.Id;
 @Entity
 @Data
 public class Flight{
-
+    //variables for Flight
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;

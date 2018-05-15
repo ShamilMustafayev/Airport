@@ -13,8 +13,4 @@ public class Airplane {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
-    private String name;
-    private double fuel;
-    private String departureAirport;
-    private String destinationAirport;
 }
