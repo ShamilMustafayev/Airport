@@ -1,9 +1,9 @@
-package controller;
+package com.capgemini.airport.controller;
 
-import model.Flight;
+import com.capgemini.airport.model.Flight;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import repository.FlightRepository;
+import com.capgemini.airport.repository.FlightRepository;
 
 import java.util.ArrayList;
 import java.util.Optional;
@@ -36,5 +36,10 @@ import java.util.Optional;
         System.out.println(flight);
         flightItems.add(flight);
         return flightItemRepository.save(flight);
+    }
+
+    @GetMapping("/remove/{id}")
+    public void removeFlight(@PathVariable int id){
+    flightItemRepository.deleteById(id);
     }
 }

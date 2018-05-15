@@ -1,6 +1,6 @@
-package repository;
+package com.capgemini.airport.repository;
 
-import model.Flight;
+import com.capgemini.airport.model.Flight;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

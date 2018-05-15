@@ -1,4 +1,4 @@
-package com.capgemini.Airport;
+package com.capgemini.airport;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

@@ -1,4 +1,5 @@
-package model;
+package com.capgemini.airport.model;
+
 
 import lombok.Data;
 
@@ -9,7 +10,8 @@ import javax.persistence.Id;
 
 @Entity
 @Data
-public class Airplane {
+public class Flight{
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
@@ -18,3 +20,4 @@ public class Airplane {
     private String departureAirport;
     private String destinationAirport;
 }
+
